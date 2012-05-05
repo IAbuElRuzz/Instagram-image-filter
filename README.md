@@ -8,7 +8,7 @@ It is the source code to the quetion in Quora: *[How does Instagram develop thei
 
 iOS DEMO Screenshot
 =====
-  !["Screenshot" alt](https://github.com/changneng/Instagram-image-filter/blob/master/example/screenshot.jpg?raw=true "Screenshot")
+  !["Screenshot" alt](https://github.com/changneng/Instagram-image-filter/blob/master/example/screenshot.png?raw=true "Screenshot")
 
 
 Example

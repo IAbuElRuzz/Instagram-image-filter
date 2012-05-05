@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="t3v-Bh-Lzs">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="dVE-J4-lcJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yzc-Qq-gyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="DRA-bD-WSL" customClass="RootViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v32-dI-XMW">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="voG-ha-wOT">
+                                <rect key="frame" x="64" y="144" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" image="takePhoto.png">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCam:" destination="DRA-bD-WSL" eventType="touchUpInside" id="Wx1-It-bQ3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VuS-6Z-ygV">
+                                <rect key="frame" x="184" y="144" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" image="pickPhoto.png">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCam:" destination="DRA-bD-WSL" eventType="touchUpInside" id="oPQ-zY-XxP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0ff-im-ggh"/>
+                    <connections>
+                        <outlet property="pickPhotoBtn" destination="VuS-6Z-ygV" id="j86-Av-b9P"/>
+                        <outlet property="tackPhotoBtn" destination="voG-ha-wOT" id="j5H-C8-8kn"/>
+                        <segue destination="2" kind="push" identifier="filter" id="r6N-WW-dh6"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="569" y="203"/>
+        </scene>
+        <!--Cngram View Controller - Filter-->
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="CngramViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="0qg-YU-pA8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="filterChooserBackground.png" id="RaO-8h-rSZ">
+                                <rect key="frame" x="0.0" y="319" width="320" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Filter" id="rvv-9Y-Gbv"/>
+                    <connections>
+                        <outlet property="imageView" destination="0qg-YU-pA8" id="6lC-2X-ehZ"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1004" y="203"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BDh-rU-l4y">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sex-C0-0sM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="t3v-Bh-Lzs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Rx9-Yg-iC9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DRA-bD-WSL" kind="relationship" relationship="rootViewController" id="lnT-VH-twE"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="118" y="203"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="filterChooserBackground.png" width="640" height="192"/>
+        <image name="pickPhoto.png" width="95" height="95"/>
+        <image name="takePhoto.png" width="56" height="44"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
