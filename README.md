@@ -2,6 +2,7 @@ Cngram (Instagram Image Filter Demo - iOS)
 ===========================
 
 This demo implements 14 filter effects similar to Instagram.
+
 It is the source code to the quetion in Quora: *How does Instagram develop their filters?*
 
 
@@ -9,6 +10,8 @@ Effect Demo
 =====
 ORIGN Image:
 * Normal:
+  ![Normal alt](http://github.com/changneng/Instagram-image-filter/blob/master/example/00.jpg "Normal")
+
 14 Effect Demo:
 * X-Pro II:
 * Lomo-fi:
