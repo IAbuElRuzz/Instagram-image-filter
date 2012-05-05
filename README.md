@@ -3,7 +3,12 @@ Cngram (Instagram Image Filter Demo - iOS)
 
 This demo implements 14 filter effects similar to Instagram.
 
-It is the source code to the quetion in Quora: *How does Instagram develop their filters?*
+It is the source code to the quetion in Quora: *[How does Instagram develop their filters?](http://www.quora.com/Instagram/How-does-Instagram-develop-their-filters/answer/Changneng-Chen)*
+
+
+iOS DEMO Screenshot
+=====
+  !["Screenshot" alt](https://github.com/changneng/Instagram-image-filter/blob/master/example/screenshot.jpg?raw=true "Screenshot")
 
 
 Example
@@ -60,19 +65,18 @@ Example
 
   ![Gotham alt](https://github.com/changneng/Instagram-image-filter/blob/master/example/12.jpg?raw=true "Gotham")
 
-* _1977_
+* 1977
 
   ![1977 alt](https://github.com/changneng/Instagram-image-filter/blob/master/example/13.jpg?raw=true "1977")
 
-* _Lord Kelvin_
+* Lord Kelvin
 
   !["Lord Kelvin" alt](https://github.com/changneng/Instagram-image-filter/blob/master/example/14.jpg?raw=true "Lord Kelvin")
 
 
-Links
+Resources
 =====
 
-* [(Quora)How does Instagram develop their filters?](http://www.quora.com/Instagram/How-does-Instagram-develop-their-filters/answer/Changneng-Chen)
 * [JSON Framework](http://github.com/stig/json-framework)
 * [EasyTableView](http://github.com/alekseyn/EasyTableView)
 
